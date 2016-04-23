@@ -1,3 +1,11 @@
+*   Add `config/initializers/to_time_preserves_timezone.rb`, which tells
+    Active Support to preserve the receiver's timezone when calling `to_time`.
+    This matches the new behavior that will be part of Ruby 2.4.
+
+    Fixes #24617.
+
+    *Andrew White*
+
 *   Run `before_configuration` callbacks as soon as application constant
     inherits from `Rails::Application`.
 
